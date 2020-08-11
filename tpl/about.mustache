@@ -1,0 +1,39 @@
+    <!-- ======= {{name}} Section ======= -->
+    <section id="{{name}}" class="{{name}}">
+        <div class="container" data-aos="fade-up">      
+
+            <div class="section-title">
+            <h2>{{name}}</h2>
+            <p>{{title}}</p>
+            </div>
+
+            <div class="row">
+            <div class="col-lg-6">
+                <h3>Who am I</h3>
+                <div class="item pb-0">
+                <p><em>{{{summary}}}</em></p>
+                <figure class="figure">
+                    <img src="assets/img/profile-img-1.jpg" class="figure-img img-fluid " alt="{{profile_1}}">
+                    <figcaption class="figure-caption">{{profile_1}}</figcaption>
+                </figure>
+                <figure class="figure">
+                    <img src="assets/img/profile-img-2.jpg" class="figure-img img-fluid " alt="{{profile_2}}">
+                    <figcaption class="figure-caption">{{profile_2}}</figcaption>
+                </figure>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3>Timeline</h3>
+                {{#events}}
+                <div class="item timeline">
+                    <h4>{{keyword}}</h4>
+                    <h5>{{year}}</h5>
+                    <p><em>{{city}}</em></p>
+                    <p>{{{event}}}</p>
+                </div>
+                {{/events}}
+            </div>
+            </div>
+
+        </div>
+    </section><!-- End {{name}} Section -->
