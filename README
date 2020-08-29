@@ -1,0 +1,2 @@
+mustache-cli --color -o . -p .
+
