@@ -73,7 +73,7 @@ module.exports = function(opts){
             name: "doomsday",
             about: "世界行将陨落时",
             category: "work",
-            url: "https://read.douban.com/column/33468444"
+            url: "http://chunlin.li/pub/%e4%b8%96%e7%95%8c%e8%a1%8c%e5%b0%86%e9%99%a8%e8%90%bd%e6%97%b6"
           },
           {
             name: "memory",
@@ -85,13 +85,13 @@ module.exports = function(opts){
             name: "dream",
             about: "异梦集",
             category: "work",
-            url: "https://read.douban.com/reader/essay/126839456/"
+            url: "http://chunlin.li/pub/%e5%bc%82%e6%a2%a6%e9%9b%86"
           },
           {
             name: "tenant",
             about: "房客",
             category: "work",
-            url: "https://read.douban.com/reader/essay/128379624/"
+            url: "http://chunlin.li/pub/%e6%88%bf%e5%ae%a2"
           },
           {
             name: "kristina-tzekova",
