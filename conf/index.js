@@ -103,7 +103,7 @@ module.exports = function(opts){
             name: "dimension",
             about: "Software design of the first Dolby consumer product",
             category: "project",
-            url: ""
+            url: "https://www.dolby.com/dimension-support/"
           }
         ]
       }, opts)
