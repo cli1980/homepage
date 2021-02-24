@@ -1,5 +1,5 @@
     <!-- ======= {{name}} Section ======= -->
-    <section id="{{name}}" class="{{name}} section-bg">
+    <section id="collection" class="collection section-bg">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
             <h2>{{name}}</h2>
@@ -8,41 +8,31 @@
 
             <div class="row">
             <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <ul id="portfolio-flters">
+                <ul id="collection-flters">
                 <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-work">Stories</li>
                 <li data-filter=".filter-project">Projects</li>
-                <li data-filter=".filter-pin">Pins</li>
                 </ul>
             </div>
             </div>
 
-            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="row collection-container" data-aos="fade-up" data-aos-delay="200">
 
             {{#items}}
-            <div class="col-lg-4 col-md-6 portfolio-item filter-{{category}}">
-                <div class="portfolio-wrap">
+            <div class="col-lg-4 col-md-6 collection-item filter-{{category}}">
+                <div class="collection-wrap">
                 <img src="assets/img/portfolio/{{name}}.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
+                <div class="collection-info">
                     <h4>{{name}}</h4>
                     <p>{{about}}</p>
-                    <div class="portfolio-links">
+                    <div class="collection-links">
                     <a href="assets/img/portfolio/{{name}}.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                    <a href="{{url}}" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    <a href="{{url}}" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Details"><i class="bx bx-link"></i></a>
                     </div>
                 </div>
                 </div>
             </div>
             {{/items}}
-
-            {{#pins}}
-            <div class="col-lg-4 col-md-6 portfolio-item filter-pin">
-                <div>
-                    <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/cli1980/{{board}}"></a>
-                </div>
-            </div>
-            {{/pins}}
-
             </div>
         </div>
     </section><!-- End {{name}} Section -->       

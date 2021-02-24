@@ -442,13 +442,13 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Collection
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.collection .collection-item {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
+.collection #collection-flters {
   padding: 0;
   margin: 0 auto 25px auto;
   list-style: none;
@@ -458,7 +458,7 @@ section {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.collection #collection-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
@@ -471,15 +471,15 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.collection #collection-flters li:hover, .collection #collection-flters li.filter-active {
   color: #0563bb;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.collection #collection-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
+.collection .collection-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -487,7 +487,7 @@ section {
   border-radius: 10px;
 }
 
-.portfolio .portfolio-wrap::before {
+.collection .collection-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -500,7 +500,7 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
+.collection .collection-wrap .collection-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -516,7 +516,7 @@ section {
   align-items: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
+.collection .collection-wrap .collection-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -530,7 +530,7 @@ section {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::after {
+.collection .collection-wrap .collection-info::after {
   display: block;
   content: "";
   width: 48px;
@@ -544,13 +544,13 @@ section {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.collection .collection-wrap .collection-info h4 {
   font-size: 20px;
   color: #45505b;
   font-weight: 600;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.collection .collection-wrap .collection-info p {
   color: #45505b;
   font-size: 14px;
   text-transform: uppercase;
@@ -558,12 +558,12 @@ section {
   margin: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.collection .collection-wrap .collection-links {
   text-align: center;
   z-index: 4;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.collection .collection-wrap .collection-links a {
   color: #45505b;
   margin: 0 2px;
   font-size: 28px;
@@ -571,11 +571,11 @@ section {
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.collection .collection-wrap .collection-links a:hover {
   color: #148af9;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.collection .collection-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
@@ -583,39 +583,39 @@ section {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.collection .collection-wrap:hover .collection-info {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
+.collection .collection-wrap:hover .collection-info::before {
   top: 15px;
   left: 15px;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
+.collection .collection-wrap:hover .collection-info::after {
   bottom: 15px;
   right: 15px;
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# collection Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.collection-details {
   padding: 40px 0;
 }
 
-.portfolio-details .portfolio-title {
+.collection-details .collection-title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.collection-details .collection-details-carousel .owl-nav, .collection-details .collection-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot {
+.collection-details .collection-details-carousel .owl-dot {
   display: inline-block;
   margin: 0 5px;
   width: 12px;
@@ -624,37 +624,37 @@ section {
   background-color: #ddd !important;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
+.collection-details .collection-details-carousel .owl-dot.active {
   background-color: #0563bb !important;
 }
 
-.portfolio-details .portfolio-info {
+.collection-details .collection-info {
   padding-top: 45px;
 }
 
-.portfolio-details .portfolio-info h3 {
+.collection-details .collection-info h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-info ul {
+.collection-details .collection-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.collection-details .collection-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-info p {
+.collection-details .collection-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
 }
 
 @media (max-width: 992px) {
-  .portfolio-details .portfolio-info {
+  .collection-details .collection-info {
     padding-top: 20px;
   }
 }

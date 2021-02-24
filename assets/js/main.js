@@ -148,15 +148,15 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item'
+    var collectionIsotope = $('.collection-container').isotope({
+      itemSelector: '.collection-item'
     });
 
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
+    $('#collection-flters li').on('click', function() {
+      $("#collection-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
-      portfolioIsotope.isotope({
+      collectionIsotope.isotope({
         filter: $(this).data('filter')
       });
       aos_init();
@@ -180,8 +180,8 @@
     items: 1
   });
 
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
+  // collection details carousel
+  $(".collection-details-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,

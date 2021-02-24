@@ -56,18 +56,10 @@ module.exports = function(opts){
           }
         ]
       }, opts)
-      const collection = output({
-        __root: 'collection.mustache',
+      const portfolio = output({
+        __root: 'portfolio.mustache',
         name: 'portfolio',
-        title: function() { return fs.readFileSync('tpl/collection/title.txt').toString(); },
-        pins: [
-          {
-            board: "art-i-cant-afford"
-          },
-          {
-            board: "art-i-can-afford"
-          }
-        ],
+        title: function() { return fs.readFileSync('tpl/collection/portfolio.txt').toString(); },
         items: [
           {
             name: "doomsday",
@@ -79,7 +71,7 @@ module.exports = function(opts){
             name: "memory",
             about: "人生不得常少年",
             category: "work",
-            url: "https://read.douban.com/reader/essay/126732003/"
+            url: "http://chunlin.li/pub/%e4%ba%ba%e7%94%9f%e4%b8%8d%e5%be%97%e5%b8%b8%e5%b0%91%e5%b9%b4"
           },
           {
             name: "dream",
@@ -94,12 +86,6 @@ module.exports = function(opts){
             url: "http://chunlin.li/pub/%e6%88%bf%e5%ae%a2"
           },
           {
-            name: "kristina-tzekova",
-            about: "Kristina Tzekova",
-            category: "pin",
-            url: "https://kristinatzekova.be/"
-          },
-          {
             name: "dimension",
             about: "Software design of the first Dolby consumer product",
             category: "project",
@@ -107,7 +93,27 @@ module.exports = function(opts){
           }
         ]
       }, opts)
-      return about + collection
+      const favorite = output({
+        __root: 'bookmark.mustache',
+        name: 'bookmarks',
+        title: function() { return fs.readFileSync('tpl/collection/bookmark.txt').toString(); },
+        pins: [
+          {
+            board: "art-i-cant-afford"
+          },
+          {
+            board: "art-i-can-afford"
+          }
+        ],
+        urls: [
+          {
+            name: "kristina-tzekova",
+            about: "Kristina Tzekova",
+            url: "https://kristinatzekova.be/"
+          }
+        ]
+      }, opts)
+      return about + portfolio + favorite
     }
   }
 }
